@@ -11,7 +11,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/opasche/ExtremeGranger/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/opasche/ExtremeGranger/blob/v0.1.0/DESCRIPTION)
 
 Pasche OC, Bodik J (2026). *ExtremeGranger: Granger Causality in
 Extremes*. R package version 0.1.0,
