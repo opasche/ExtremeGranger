@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # ExtremeGranger
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/opasche/ExtremeGranger/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/opasche/ExtremeGranger/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The ExtremeGranger R package is a framework for Granger causality in extremes, designed to 
@@ -49,7 +50,7 @@ devtools::install_github("opasche/ExtremeGranger")
 
 Here is an usage example with a 4-dimensional toy VAR time series with `lag = 2`.
 
-```{r example}
+```{r example, warning=FALSE, message=FALSE}
 # Load the ExtremeGranger R package
 library(ExtremeGranger)
 
@@ -89,7 +90,7 @@ G <- Extreme_causality_graph(w, max_causal_lag = 2)  # Try it out also with lag 
 
 On can then use, for example, the `igraph` package for plotting the estimated graph.
 
-```{r plot}
+```{r plot, warning=FALSE, message=FALSE}
 # Visualizing the final graph estimate using the igraph package
 library(igraph)
 

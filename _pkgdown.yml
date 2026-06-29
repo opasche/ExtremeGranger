@@ -1,0 +1,24 @@
+url: https://opasche.github.io/ExtremeGranger/
+template:
+  bootstrap: 5
+  light-switch: yes
+reference:
+- title: Extreme Granger causality test
+  desc: Testing for direct causality between two time series, given potential confounders.
+  contents: 
+  - Extreme_causality_test
+- title: Causal graph
+  desc: Estimating the full causal graph between multiple time series, using the extreme Granger causality test.
+  contents:
+  - Extreme_causality_graph
+  - Extreme_causality_graph_parallel
+- title: internal
+  contents:
+  - run_future_max
+  - switcher_for_test
+  - find_parents
+  - compute_edge_weights
+  - compute_edge_weights_for_p_values
+  - set_doFuture_strategy
+  - end_doFuture_strategy
+

@@ -23,6 +23,9 @@ Description: This framework for Granger causality in extremes is designed
     series.  The methodology was introduced in Bodik and Pasche (2024)
     <doi:10.48550/arXiv.2407.09632>.
 License: GPL (>= 3)
+URL: https://opasche.github.io/ExtremeGranger/,
+    https://github.com/opasche/ExtremeGranger
+BugReports: https://github.com/opasche/ExtremeGranger/issues
 Imports: 
     doFuture,
     foreach,

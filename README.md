@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/opasche/ExtremeGranger/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/opasche/ExtremeGranger/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The ExtremeGranger R package is a framework for Granger causality in
@@ -42,14 +43,6 @@ library(ExtremeGranger)
 
 # Load EnvStats for the example (or any other package that can generate Pareto noise)
 library(EnvStats) 
-#> 
-#> Attachement du package : 'EnvStats'
-#> Les objets suivants sont masqués depuis 'package:stats':
-#> 
-#>     predict, predict.lm
-#> L'objet suivant est masqué depuis 'package:base':
-#> 
-#>     print.default
 
 # Example: Generating a 4-dimensional VAR time series with lag = 2
 n <- 5000
@@ -87,14 +80,6 @@ estimated graph.
 ``` r
 # Visualizing the final graph estimate using the igraph package
 library(igraph)
-#> 
-#> Attachement du package : 'igraph'
-#> Les objets suivants sont masqués depuis 'package:stats':
-#> 
-#>     decompose, spectrum
-#> L'objet suivant est masqué depuis 'package:base':
-#> 
-#>     union
 
 graph <- graph_from_edgelist(G$G)
 V(graph)$name <- names(w)
