@@ -1,0 +1,37 @@
+Type: Package
+Package: ExtremeGranger
+Title: Granger Causality in Extremes
+Version: 0.1.0
+Authors@R: c(
+    person(c("Olivier", "C."), "Pasche", , "olivier_pasche@alumni.epfl.ch", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-1202-9199")),
+    person("Juraj", "Bodik", , "juraj.bodik@unil.ch", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0002-4970-3300"))
+  )
+Description: This framework for Granger causality in extremes is designed
+    to identify causal links from extreme events in observational time
+    series.  Granger causality plays a pivotal role in understanding
+    directional relationships among time-varying variables. While the task
+    of causal discovery in time series gains heightened importance during
+    extreme and highly volatile periods, state-of-the-art methods
+    primarily focus on causality within the body of the distribution,
+    often overlooking causal mechanisms that manifest only during extreme
+    events.  Our framework is designed to infer causality mainly from
+    extreme events by leveraging the causal tail coefficient. It is
+    especially helpful in the presence of hidden confounders. Our method
+    is non-parametric, can handle non-linear and high-dimensional time
+    series.  The methodology was introduced in Bodik and Pasche (2024)
+    <doi:10.48550/arXiv.2407.09632>.
+License: GPL (>= 3)
+Imports: 
+    doFuture,
+    foreach,
+    future,
+    stats
+Suggests: 
+    EnvStats,
+    igraph
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
